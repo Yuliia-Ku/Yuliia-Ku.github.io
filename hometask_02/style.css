@@ -1,0 +1,205 @@
+﻿body{
+	font-family: sans-serif;
+	background-image: url("pic_66.jpg");
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: #2E2E2E;
+   } 
+ul{
+   list-style-position: inside;
+   list-style-type: square;
+}
+ol{
+   list-style-position: inside;
+   list-style-type: decimal;
+}
+li::before {
+    color: red;
+    content: "▪";
+    padding-right: 20px;
+   }
+.outer {
+	max-width: 800px;
+	background-color: #7CFC00;
+	padding: 10px;
+}
+.inner {
+	background-color: #98FB98;
+	color: #006400;
+	font: 14pt Arial;
+	display: inline-block;
+	padding: 10px;
+}
+.block1 {
+	width: 600px;
+	background-color: #FFD700;
+	padding: 20px;
+	margin: 10px;
+}
+.block2 {
+	width: 500px;
+	background-color: #FF4500;
+	margin: -10px 10px 0px 10px;
+}
+.block3 {
+	width: 400px;
+	background-color: #228B22;
+	padding: 20px;
+	margin: -20px 0px 20px 70px;
+}
+.block4 {
+	width: 500px;
+	background-image: linear-gradient(135deg, rgba(232,232,239,1) 0%,rgba(101,211,216,1) 20%,rgba(222,239,252,1) 44%,rgba(222,239,252,1) 66%,rgba(102,190,214,1) 100%);
+	padding: 10px;
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+.block5 {
+	max-width: 600px;
+	background-image: url("pic_91.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 15px auto;
+}
+.block6 {
+	width: 400px;
+	background-color: #E6E6FA;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 10px;
+	border: 2px dashed #4682B4;
+	border-right: none;
+	border-radius: 10px;
+}
+	.block7 {
+	width: 400px;
+	background-color: #E6E6FA;
+	padding: 15px;
+	box-sizing: border-box;
+	margin: 10px;
+	outline: 2px solid #4682B4;
+	outline-offset: -10px;
+	box-shadow: rgba(0, 0, 0, 0.6) 40px 20px 15px;
+	}
+.block8 {
+	width: 300px;
+	background-color: rgb(0, 139, 139);
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 15px;
+	opacity: 0.4;
+}
+.block9 {
+	width: 200px;
+	background-color: rgb(0, 139, 139);
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 50px auto;
+	border: 2px solid #4682B4;
+	position: relative;
+	top: -100px;
+	right: 200px;
+}
+.block10 {
+	width: 200px;
+	background-color: rgb(0, 206, 209);
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px auto;
+	border: 2px solid #4682B4;
+	position: absolute;
+	top: -60px;
+	right: 200px;
+}
+.block11 {
+	width: 300px;
+	background-color: rgb(0, 139, 139);
+	padding: 30px;
+	box-sizing: border-box;
+	margin: 10px auto;
+	border: 2px solid #4682B4;
+	position: relative;
+}
+.block12 {
+	width: 200px;
+	background-color: #f0f0f0;
+	padding: 5px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0px;
+	right: 100px;
+}
+.block13 {
+	width: 500px;
+	background-color: rgb(192, 192, 192);
+	padding: 30px;
+	box-sizing: border-box;
+	margin: 50px auto;
+	border: 2px solid #4682B4;
+	position: relative;
+}
+.block-ins{
+	width: 100px;
+	height: 40px;
+	background-color: rgb(255, 69, 0);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+}
+.block-ins.yellow{
+	width: 200px;
+	background-color: rgb(255, 255, 0);
+	top: 10px;
+	left: 98px;
+	z-index: 1;
+}
+.block-ins.green{
+	width: 200px;
+	background-color: rgb(50, 205, 50);
+	top: 0px;
+	left: 298px;
+}
+.block14 {
+	width: 1130px;
+	height: 250px;
+	background-image: linear-gradient(45deg, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 18%,rgba(249,244,246,1) 38%,rgba(247,192,230,1) 58%,rgba(252,239,248,1) 80%,rgba(211,143,216,1) 100%); 
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 30px auto;
+	box-shadow: rgba(128, 0, 128, 0.4) 20px 50px 10px;
+	border: 2px solid rgb(128, 0, 128);
+	border-radius: 0px 40px;
+	position: relative;
+}
+.blocks-ins {
+	width: 200px;
+	height: 100px;
+	background-image: url("pic_2.jpg");
+	background-size: cover;
+	background-position: bottom;
+	border: 1px solid;
+	position: absolute;
+	top: 120px;
+	left: 20px;	
+}
+.blocks-ins.pic1 {
+	background-image: url("pic_21.jpg");
+	left: 240px;	
+}
+.blocks-ins.pic2 {
+	background-image: url("pic_22.jpg");
+	left: 460px;	
+}
+.blocks-ins.pic3 {
+	background-image: url("pic_23.jpg");
+	left: 680px;	
+}
+.blocks-ins.pic4 {
+	background-image: url("pic_24.jpg");
+	left: 900px;	
+}
