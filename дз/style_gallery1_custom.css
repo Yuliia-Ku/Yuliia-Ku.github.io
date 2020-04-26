@@ -1,0 +1,106 @@
+﻿body {
+max-width: 1200px;
+min-height: 100vh;
+background-color: #f5eef4;
+font: 10pt sans-serif;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+}
+header, nav, section, aside, footer {
+	padding: 5px;
+	color: #696969;
+	box-sizing: border-box;	
+}
+header {
+	height: 70px;
+	background-color: #DB7093;
+	font-size: 25pt;
+	text-align: center;
+}
+nav {
+	background-color: #D3D3D3;
+	text-align: center;
+}
+main {
+	flex-grow: 1;
+	display: flex;
+}
+section {
+	background-color: #fdeffa;
+	flex-grow: 1;
+	padding: 10px;
+	text-align: center;
+}
+aside {
+	background-color: #ffebf0;
+	flex-basis: 250px;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+}
+.flex-container {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: space-evenly;
+}
+.flex-item {
+	flex-basis: 200px;
+	border: 1px solid #5f5f5f;
+	border-radius: 10px;
+	background: #f0f0f0;
+	margin: 15px;
+	box-sizing: border-box;
+	}
+.flex-item > img {
+	width: 200px;
+}
+/* если убираю хар-ки IMG, то плывут все картинки - становятся своего размера
+img {
+	width: 200px;
+} */
+footer {
+	height: 50px;
+	background-color: #DEB887;
+	text-align: right;
+}
+	
+@media screen and (max-width: 575px){
+	main {
+	flex-basis: auto;
+	flex-direction: column;
+	}	
+	.flex-container {
+	flex-grow: 1;
+	flex-basis: auto;
+	}
+}
+@media screen and (max-width: 767px){
+	main {
+		flex-direction: column;
+	}
+	.flex-container {
+		flex-shrink: 0;
+		flex-basis: calc(50% - 20px);
+	}
+}
+@media screen and (max-width: 991px){
+	aside {
+		flex-basis: 200px;
+	}
+.flex-container {
+		flex-shrink: 0;
+		flex-basis: calc(33,333% - 20px);
+	}
+img {
+	width: 200px;
+}
+}
+@media screen and (max-width: 1200px){
+.flex-container {
+		flex-shrink: 0;
+		flex-basis: calc(25% - 10px);
+}
+}
